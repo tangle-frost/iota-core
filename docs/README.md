@@ -6,6 +6,7 @@
 ### Classes
 
 * [ArrayHelper](classes/arrayhelper.md)
+* [Color](classes/color.md)
 * [FactoryBase](classes/factorybase.md)
 * [NumberHelper](classes/numberhelper.md)
 * [ObjectHelper](classes/objecthelper.md)

@@ -2,7 +2,7 @@
 
 # Class: StringHelper
 
-Class to maniuplate Strings.
+String helper methods.
 
 ## Hierarchy
 
@@ -15,6 +15,8 @@ Class to maniuplate Strings.
 * [decodeNonASCII](stringhelper.md#decodenonascii)
 * [encodeNonASCII](stringhelper.md#encodenonascii)
 * [isASCII](stringhelper.md#isascii)
+* [isEmpty](stringhelper.md#isempty)
+* [isString](stringhelper.md#isstring)
 
 ---
 
@@ -26,7 +28,7 @@ Class to maniuplate Strings.
 
 ▸ **decodeNonASCII**(value: *`string`*): `string`
 
-*Defined in helpers/stringHelper.ts:20*
+*Defined in helpers/stringHelper.ts:48*
 
 Decode control characters to ASCII.
 
@@ -46,7 +48,7 @@ ___
 
 ▸ **encodeNonASCII**(value: *`string`*): `string`
 
-*Defined in helpers/stringHelper.ts:10*
+*Defined in helpers/stringHelper.ts:39*
 
 Encode non ASCII characters with control characters.
 
@@ -66,18 +68,58 @@ ___
 
 ▸ **isASCII**(value: *`string`*): `boolean`
 
-*Defined in helpers/stringHelper.ts:30*
+*Defined in helpers/stringHelper.ts:29*
 
-Check to see if the whole string is ASCII.
+Is the string all ASCII characters.
 
 **Parameters:**
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| value | `string` |  The value to check. |
+| value | `string` |  string to test if is is ASCII. |
 
 **Returns:** `boolean`
-True if all the characters are ascii.
+True if the object is all ASCII.
+
+___
+<a id="isempty"></a>
+
+### `<Static>` isEmpty
+
+▸ **isEmpty**(value: *`any`*): `boolean`
+
+*Defined in helpers/stringHelper.ts:20*
+
+Is the value a string that is empty.
+
+**Parameters:**
+
+| Param | Type | Description |
+| ------ | ------ | ------ |
+| value | `any` |  Object to test for its no emptyness. |
+
+**Returns:** `boolean`
+True if the object is an empty string.
+
+___
+<a id="isstring"></a>
+
+### `<Static>` isString
+
+▸ **isString**(value: *`any`*): `boolean`
+
+*Defined in helpers/stringHelper.ts:10*
+
+Is the value a string.
+
+**Parameters:**
+
+| Param | Type | Description |
+| ------ | ------ | ------ |
+| value | `any` |  Object to test for its stringyness. |
+
+**Returns:** `boolean`
+True if the object is a string.
 
 ___
 

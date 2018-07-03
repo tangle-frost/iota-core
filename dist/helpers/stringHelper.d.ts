@@ -1,7 +1,25 @@
 /**
- * Class to maniuplate Strings.
+ * String helper methods.
  */
 export declare class StringHelper {
+    /**
+     * Is the value a string.
+     * @param value Object to test for its stringyness.
+     * @returns True if the object is a string.
+     */
+    static isString(value: any): value is string;
+    /**
+     * Is the value a string that is empty.
+     * @param value Object to test for its no emptyness.
+     * @returns True if the object is an empty string.
+     */
+    static isEmpty(value: any): boolean;
+    /**
+     * Is the string all ASCII characters.
+     * @param value string to test if is is ASCII.
+     * @returns True if the object is all ASCII.
+     */
+    static isASCII(value: string): boolean;
     /**
      * Encode non ASCII characters with control characters.
      * @param value The string value to escape.
@@ -14,10 +32,4 @@ export declare class StringHelper {
      * @returns The decoded version of the string.
      */
     static decodeNonASCII(value: string): string;
-    /**
-     * Check to see if the whole string is ASCII.
-     * @param value The value to check.
-     * @returns True if all the characters are ascii.
-     */
-    static isASCII(value: string): boolean;
 }
