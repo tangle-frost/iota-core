@@ -126,6 +126,30 @@ describe("Color", () => {
         });
     });
 
+    describe("rgbText", () => {
+        it("can succeed", () => {
+            const obj = Color.fromHex("#98ABCDEF");
+            chai.expect(obj.rgbText()).to.equal("rgb(171,205,239)");
+        });
+    });
+
+    describe("rgbaText", () => {
+        it("can succeed with fractional alpha", () => {
+            const obj = Color.fromHex("#98ABCDEF");
+            chai.expect(obj.rgbaText()).to.equal("rgba(171,205,239,0.6)");
+        });
+
+        it("can succeed zero alpha", () => {
+            const obj = Color.fromHex("#00ABCDEF");
+            chai.expect(obj.rgbaText()).to.equal("rgba(171,205,239,0)");
+        });
+
+        it("can succeed full alpha", () => {
+            const obj = Color.fromHex("#FFABCDEF");
+            chai.expect(obj.rgbaText()).to.equal("rgba(171,205,239,1)");
+        });
+    });
+
     describe("hex", () => {
         it("can succeed", () => {
             const obj = Color.fromHex("#98ABCDEF");

@@ -130,6 +130,22 @@ export class Color {
     }
 
     /**
+     * Get color as rgb text.
+     * @returns The color as rgb.
+     */
+    public rgbText(): string {
+        return `rgb(${this._red},${this._green},${this._blue})`;
+    }
+
+    /**
+     * Get color as rgba text.
+     * @returns The color as rgba.
+     */
+    public rgbaText(): string {
+        return `rgba(${this._red},${this._green},${this._blue},${Math.round(this._alpha / 255 * 100) / 100})`;
+    }
+
+    /**
      * Get color as hex no alpha.
      * @returns The color as hex with no alpha component.
      */

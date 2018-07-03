@@ -47,6 +47,16 @@ export declare class Color {
      */
     rgba(): number;
     /**
+     * Get color as rgb text.
+     * @returns The color as rgb.
+     */
+    rgbText(): string;
+    /**
+     * Get color as rgba text.
+     * @returns The color as rgba.
+     */
+    rgbaText(): string;
+    /**
      * Get color as hex no alpha.
      * @returns The color as hex with no alpha component.
      */

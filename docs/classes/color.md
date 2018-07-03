@@ -23,7 +23,9 @@ Class to represent a color.
 * [hex](color.md#hex)
 * [hexWithAlpha](color.md#hexwithalpha)
 * [red](color.md#red)
+* [rgbText](color.md#rgbtext)
 * [rgba](color.md#rgba)
+* [rgbaText](color.md#rgbatext)
 * [fromHex](color.md#fromhex)
 
 ---
@@ -117,7 +119,7 @@ ___
 
 ▸ **hex**(): `string`
 
-*Defined in data/color.ts:136*
+*Defined in data/color.ts:152*
 
 Get color as hex no alpha.
 
@@ -131,7 +133,7 @@ ___
 
 ▸ **hexWithAlpha**(): `string`
 
-*Defined in data/color.ts:147*
+*Defined in data/color.ts:163*
 
 Get color as hex with alpha.
 
@@ -153,6 +155,20 @@ Get the red element.
 The red element.
 
 ___
+<a id="rgbtext"></a>
+
+###  rgbText
+
+▸ **rgbText**(): `string`
+
+*Defined in data/color.ts:136*
+
+Get color as rgb text.
+
+**Returns:** `string`
+The color as rgb.
+
+___
 <a id="rgba"></a>
 
 ###  rgba
@@ -164,6 +180,20 @@ ___
 Get color as rgba.
 
 **Returns:** `number`
+The color as rgba.
+
+___
+<a id="rgbatext"></a>
+
+###  rgbaText
+
+▸ **rgbaText**(): `string`
+
+*Defined in data/color.ts:144*
+
+Get color as rgba text.
+
+**Returns:** `string`
 The color as rgba.
 
 ___

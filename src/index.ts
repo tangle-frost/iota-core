@@ -1,6 +1,7 @@
 /**
  * Combined index of all the modules.
  */
+export * from "./data/color";
 export * from "./factories/factoryBase";
 export * from "./helpers/arrayHelper";
 export * from "./helpers/numberHelper";
