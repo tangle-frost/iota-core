@@ -30,7 +30,7 @@ Class to manipulate Trytes.
 
 **● ALPHABET**: *`string`* = "9ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-*Defined in helpers/trytesHelper.ts:8*
+*Defined in helpers/trytesHelper.ts:10*
 
 All the characters that can be used in trytes.
 
@@ -44,7 +44,7 @@ ___
 
 ▸ **from**(trytes: *`string`*): `string`
 
-*Defined in helpers/trytesHelper.ts:41*
+*Defined in helpers/trytesHelper.ts:43*
 
 Convert trytes into a string value.
 
@@ -64,7 +64,7 @@ ___
 
 ▸ **isTrytes**(trytes: *`string`*): `boolean`
 
-*Defined in helpers/trytesHelper.ts:71*
+*Defined in helpers/trytesHelper.ts:73*
 
 Check to make sure all the characters in the strin are tryte characters.
 
@@ -82,9 +82,9 @@ ___
 
 ### `<Static>` to
 
-▸ **to**(ascii: *`string`*): `string`
+▸ **to**(value: *`string`*): `string`
 
-*Defined in helpers/trytesHelper.ts:15*
+*Defined in helpers/trytesHelper.ts:17*
 
 Convert a string value into trytes.
 
@@ -92,7 +92,7 @@ Convert a string value into trytes.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| ascii | `string` |  The value to convert into trytes. |
+| value | `string` |  The value to convert into trytes. |
 
 **Returns:** `string`
 The trytes representation of the value.

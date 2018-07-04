@@ -1,3 +1,5 @@
+import { StringHelper } from "./stringHelper";
+
 /**
  * Class to manipulate Trytes.
  */
@@ -9,22 +11,22 @@ export class TrytesHelper {
 
     /**
      * Convert a string value into trytes.
-     * @param ascii The value to convert into trytes.
+     * @param value The value to convert into trytes.
      * @returns The trytes representation of the value.
      */
-    public static to(ascii: string): string {
+    public static to(value: string): string {
         let trytes = "";
 
-        if (ascii) {
-            for (let i = 0; i < ascii.length; i++) {
-                const charCode = ascii.charCodeAt(i);
+        if (value) {
+            if (!StringHelper.isASCII(value)) {
+                throw new Error(`The value contains non ASCII characters`);
+            }
 
-                if (charCode > 255) {
-                    throw new Error(`Can not convert non ASCII characters to trytes, charCode ${charCode}`);
-                }
+            for (let i = 0; i < value.length; i++) {
+                const asciiValue = value.charCodeAt(i);
 
-                const firstValue = charCode % 27;
-                const secondValue = (charCode - firstValue) / 27;
+                const firstValue = asciiValue % 27;
+                const secondValue = (asciiValue - firstValue) / 27;
 
                 trytes += TrytesHelper.ALPHABET[firstValue] + TrytesHelper.ALPHABET[secondValue];
             }

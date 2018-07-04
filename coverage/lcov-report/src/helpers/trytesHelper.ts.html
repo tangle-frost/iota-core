@@ -22,7 +22,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>25/25</span>
+        <span class='fraction'>26/26</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -37,7 +37,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>25/25</span>
+        <span class='fraction'>26/26</span>
       </div>
     </div>
     <p class="quiet">
@@ -120,7 +120,11 @@
 <a name='L72'></a><a href='#L72'>72</a>
 <a name='L73'></a><a href='#L73'>73</a>
 <a name='L74'></a><a href='#L74'>74</a>
-<a name='L75'></a><a href='#L75'>75</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -139,11 +143,11 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">5x</span>
@@ -194,7 +198,9 @@
 <span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { StringHelper } from "./stringHelper";
+&nbsp;
+/**
  * Class to manipulate Trytes.
  */
 export class TrytesHelper {
@@ -205,22 +211,22 @@ export class TrytesHelper {
 &nbsp;
     /**
      * Convert a string value into trytes.
-     * @param ascii The value to convert into trytes.
+     * @param value The value to convert into trytes.
      * @returns The trytes representation of the value.
      */
-    public static to(ascii: string): string {
+    public static to(value: string): string {
         let trytes = "";
 &nbsp;
-        if (ascii) {
-            for (let i = 0; i &lt; ascii.length; i++) {
-                const charCode = ascii.charCodeAt(i);
+        if (value) {
+            if (!StringHelper.isASCII(value)) {
+                throw new Error(`The value contains non ASCII characters`);
+            }
 &nbsp;
-                if (charCode &gt; 255) {
-                    throw new Error(`Can not convert non ASCII characters to trytes, charCode ${charCode}`);
-                }
+            for (let i = 0; i &lt; value.length; i++) {
+                const asciiValue = value.charCodeAt(i);
 &nbsp;
-                const firstValue = charCode % 27;
-                const secondValue = (charCode - firstValue) / 27;
+                const firstValue = asciiValue % 27;
+                const secondValue = (asciiValue - firstValue) / 27;
 &nbsp;
                 trytes += TrytesHelper.ALPHABET[firstValue] + TrytesHelper.ALPHABET[secondValue];
             }

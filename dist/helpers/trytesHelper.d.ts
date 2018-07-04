@@ -8,10 +8,10 @@ export declare class TrytesHelper {
     static ALPHABET: string;
     /**
      * Convert a string value into trytes.
-     * @param ascii The value to convert into trytes.
+     * @param value The value to convert into trytes.
      * @returns The trytes representation of the value.
      */
-    static to(ascii: string): string;
+    static to(value: string): string;
     /**
      * Convert trytes into a string value.
      * @param trytes The trytes to convert into a string value.
