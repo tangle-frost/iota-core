@@ -38,7 +38,7 @@ Class to represent a color.
 
 ⊕ **new Color**(alpha: *`number`*, red: *`number`*, green: *`number`*, blue: *`number`*): [Color](color.md)
 
-*Defined in data/color.ts:15*
+*Defined in [data/color.ts:15](https://github.com/tangle-frost/iota-core/tree/master/src/data/color.ts#L15*
 
 Create a new instance of color.
 
@@ -63,7 +63,7 @@ ___
 
 ▸ **alpha**(): `number`
 
-*Defined in data/color.ts:88*
+*Defined in [data/color.ts:88](https://github.com/tangle-frost/iota-core/tree/master/src/data/color.ts#L88*
 
 Get the alpha element.
 
@@ -77,7 +77,7 @@ ___
 
 ▸ **argb**(): `number`
 
-*Defined in data/color.ts:120*
+*Defined in [data/color.ts:120](https://github.com/tangle-frost/iota-core/tree/master/src/data/color.ts#L120*
 
 Get color as argb.
 
@@ -91,7 +91,7 @@ ___
 
 ▸ **blue**(): `number`
 
-*Defined in data/color.ts:112*
+*Defined in [data/color.ts:112](https://github.com/tangle-frost/iota-core/tree/master/src/data/color.ts#L112*
 
 Get the blue element.
 
@@ -105,7 +105,7 @@ ___
 
 ▸ **green**(): `number`
 
-*Defined in data/color.ts:104*
+*Defined in [data/color.ts:104](https://github.com/tangle-frost/iota-core/tree/master/src/data/color.ts#L104*
 
 Get the green element.
 
@@ -119,7 +119,7 @@ ___
 
 ▸ **hex**(): `string`
 
-*Defined in data/color.ts:152*
+*Defined in [data/color.ts:152](https://github.com/tangle-frost/iota-core/tree/master/src/data/color.ts#L152*
 
 Get color as hex no alpha.
 
@@ -133,7 +133,7 @@ ___
 
 ▸ **hexWithAlpha**(): `string`
 
-*Defined in data/color.ts:163*
+*Defined in [data/color.ts:163](https://github.com/tangle-frost/iota-core/tree/master/src/data/color.ts#L163*
 
 Get color as hex with alpha.
 
@@ -147,7 +147,7 @@ ___
 
 ▸ **red**(): `number`
 
-*Defined in data/color.ts:96*
+*Defined in [data/color.ts:96](https://github.com/tangle-frost/iota-core/tree/master/src/data/color.ts#L96*
 
 Get the red element.
 
@@ -161,7 +161,7 @@ ___
 
 ▸ **rgbText**(): `string`
 
-*Defined in data/color.ts:136*
+*Defined in [data/color.ts:136](https://github.com/tangle-frost/iota-core/tree/master/src/data/color.ts#L136*
 
 Get color as rgb text.
 
@@ -175,7 +175,7 @@ ___
 
 ▸ **rgba**(): `number`
 
-*Defined in data/color.ts:128*
+*Defined in [data/color.ts:128](https://github.com/tangle-frost/iota-core/tree/master/src/data/color.ts#L128*
 
 Get color as rgba.
 
@@ -189,7 +189,7 @@ ___
 
 ▸ **rgbaText**(): `string`
 
-*Defined in data/color.ts:144*
+*Defined in [data/color.ts:144](https://github.com/tangle-frost/iota-core/tree/master/src/data/color.ts#L144*
 
 Get color as rgba text.
 
@@ -203,7 +203,7 @@ ___
 
 ▸ **fromHex**(hex: *`string`*): [Color](color.md)
 
-*Defined in data/color.ts:49*
+*Defined in [data/color.ts:49](https://github.com/tangle-frost/iota-core/tree/master/src/data/color.ts#L49*
 
 Construct a color from a hex string.
 

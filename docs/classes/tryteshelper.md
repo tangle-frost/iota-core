@@ -30,7 +30,7 @@ Class to manipulate Trytes.
 
 **● ALPHABET**: *`string`* = "9ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-*Defined in helpers/trytesHelper.ts:10*
+*Defined in [helpers/trytesHelper.ts:10](https://github.com/tangle-frost/iota-core/tree/master/src/helpers/trytesHelper.ts#L10*
 
 All the characters that can be used in trytes.
 
@@ -44,7 +44,7 @@ ___
 
 ▸ **from**(trytes: *`string`*): `string`
 
-*Defined in helpers/trytesHelper.ts:43*
+*Defined in [helpers/trytesHelper.ts:43](https://github.com/tangle-frost/iota-core/tree/master/src/helpers/trytesHelper.ts#L43*
 
 Convert trytes into a string value.
 
@@ -64,7 +64,7 @@ ___
 
 ▸ **isTrytes**(trytes: *`string`*): `boolean`
 
-*Defined in helpers/trytesHelper.ts:73*
+*Defined in [helpers/trytesHelper.ts:73](https://github.com/tangle-frost/iota-core/tree/master/src/helpers/trytesHelper.ts#L73*
 
 Check to make sure all the characters in the strin are tryte characters.
 
@@ -84,7 +84,7 @@ ___
 
 ▸ **to**(value: *`string`*): `string`
 
-*Defined in helpers/trytesHelper.ts:17*
+*Defined in [helpers/trytesHelper.ts:17](https://github.com/tangle-frost/iota-core/tree/master/src/helpers/trytesHelper.ts#L17*
 
 Convert a string value into trytes.
 

@@ -25,7 +25,7 @@ Number helper methods.
 
 ▸ **isInteger**(value: *`any`*): `boolean`
 
-*Defined in helpers/numberHelper.ts:10*
+*Defined in [helpers/numberHelper.ts:10](https://github.com/tangle-frost/iota-core/tree/master/src/helpers/numberHelper.ts#L10*
 
 Is the value an integer.
 
@@ -45,7 +45,7 @@ ___
 
 ▸ **isNumber**(value: *`any`*): `boolean`
 
-*Defined in helpers/numberHelper.ts:19*
+*Defined in [helpers/numberHelper.ts:19](https://github.com/tangle-frost/iota-core/tree/master/src/helpers/numberHelper.ts#L19*
 
 Is the value a number.
 
