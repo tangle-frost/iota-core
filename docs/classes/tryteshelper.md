@@ -44,7 +44,7 @@ ___
 
 ▸ **from**(trytes: *`string`*): `string`
 
-*Defined in [helpers/trytesHelper.ts:43](https://github.com/tangle-frost/iota-core/tree/master/src/helpers/trytesHelper.ts#L43*
+*Defined in [helpers/trytesHelper.ts:41](https://github.com/tangle-frost/iota-core/tree/master/src/helpers/trytesHelper.ts#L41*
 
 Convert trytes into a string value.
 

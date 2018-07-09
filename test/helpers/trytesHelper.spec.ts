@@ -11,12 +11,8 @@ describe("TrytesHelper", () => {
     });
 
     describe("to", () => {
-        it("can be called with no content", () => {
-            chai.expect(TrytesHelper.to(undefined)).to.equal("");
-        });
-
-        it("can fail with non ascii", () => {
-            chai.expect(() => TrytesHelper.to(String.fromCharCode(256))).to.throw("non ASCII");
+        it("can fail with no content", () => {
+            chai.expect(() => TrytesHelper.to(undefined)).to.throw("can not be empty");
         });
 
         it("can be called with content", () => {
@@ -25,8 +21,8 @@ describe("TrytesHelper", () => {
     });
 
     describe("from", () => {
-        it("can be called with no content", () => {
-            chai.expect(TrytesHelper.from(undefined)).to.equal("");
+        it("can fail with no content", () => {
+            chai.expect(() => TrytesHelper.from(undefined)).to.throw("can not be empty");
         });
 
         it("can fail with odd length", () => {
@@ -63,5 +59,4 @@ describe("TrytesHelper", () => {
             chai.expect(TrytesHelper.isTrytes("WCTC9D9DCD")).to.equal(true);
         });
     });
-
 });

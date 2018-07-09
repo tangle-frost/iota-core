@@ -17,19 +17,17 @@ export class TrytesHelper {
     public static to(value: string): string {
         let trytes = "";
 
-        if (value) {
-            if (!StringHelper.isASCII(value)) {
-                throw new Error(`The value contains non ASCII characters`);
-            }
+        if (StringHelper.isEmpty(value)) {
+            throw new Error(`The value can not be empty`);
+        }
 
-            for (let i = 0; i < value.length; i++) {
-                const asciiValue = value.charCodeAt(i);
+        for (let i = 0; i < value.length; i++) {
+            const asciiValue = value.charCodeAt(i);
 
-                const firstValue = asciiValue % 27;
-                const secondValue = (asciiValue - firstValue) / 27;
+            const firstValue = asciiValue % 27;
+            const secondValue = (asciiValue - firstValue) / 27;
 
-                trytes += TrytesHelper.ALPHABET[firstValue] + TrytesHelper.ALPHABET[secondValue];
-            }
+            trytes += TrytesHelper.ALPHABET[firstValue] + TrytesHelper.ALPHABET[secondValue];
         }
 
         return trytes;
@@ -43,23 +41,25 @@ export class TrytesHelper {
     public static from(trytes: string): string {
         let ascii = "";
 
-        if (trytes) {
-            if (trytes.length % 2 === 1) {
-                throw new Error(`The trytes length must be an even number, it is ${trytes.length}`);
-            }
+        if (StringHelper.isEmpty(trytes)) {
+            throw new Error(`The trytes can not be empty`);
+        }
 
-            if (!TrytesHelper.isTrytes(trytes)) {
-                throw new Error("The trytes contains non-tryte characters");
-            }
+        if (trytes.length % 2 === 1) {
+            throw new Error(`The trytes length must be an even number, it is ${trytes.length}`);
+        }
 
-            for (let i = 0; i < trytes.length; i += 2) {
-                const firstValue = TrytesHelper.ALPHABET.indexOf(trytes[i]);
-                const secondValue = TrytesHelper.ALPHABET.indexOf(trytes[i + 1]);
+        if (!TrytesHelper.isTrytes(trytes)) {
+            throw new Error("The trytes contains non-tryte characters");
+        }
 
-                const decimalValue = firstValue + secondValue * 27;
+        for (let i = 0; i < trytes.length; i += 2) {
+            const firstValue = TrytesHelper.ALPHABET.indexOf(trytes[i]);
+            const secondValue = TrytesHelper.ALPHABET.indexOf(trytes[i + 1]);
 
-                ascii += String.fromCharCode(decimalValue);
-            }
+            const decimalValue = firstValue + secondValue * 27;
+
+            ascii += String.fromCharCode(decimalValue);
         }
 
         return ascii;
