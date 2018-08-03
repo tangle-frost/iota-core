@@ -23,12 +23,22 @@ export class StringHelper {
 
     /**
      * Is the string all ASCII characters.
-     * @param value string to test if is is ASCII.
+     * @param value string to test if it is ASCII.
      * @returns True if the object is all ASCII.
      */
     public static isASCII(value: string): boolean {
         return value === null || value === undefined
             ? false : /^[\x00-\x7F]*$/.test(value);
+    }
+
+    /**
+     * Is the string all printable characters, including tab, carriage return and line feed.
+     * @param value string to test if it is printabl.
+     * @returns True if the object is all printable
+     */
+    public static isPrintable(value: string): boolean {
+        return value === null || value === undefined
+            ? false : /^[\x09\x0A\x0D\x20-\xFF]*$/.test(value);
     }
 
     /**

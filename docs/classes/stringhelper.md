@@ -16,6 +16,7 @@ String helper methods.
 * [encodeNonASCII](stringhelper.md#encodenonascii)
 * [isASCII](stringhelper.md#isascii)
 * [isEmpty](stringhelper.md#isempty)
+* [isPrintable](stringhelper.md#isprintable)
 * [isString](stringhelper.md#isstring)
 
 ---
@@ -28,7 +29,7 @@ String helper methods.
 
 ▸ **decodeNonASCII**(value: *`string`*): `string`
 
-*Defined in [helpers/stringHelper.ts:48](https://github.com/tangle-frost/iota-core/tree/master/src/helpers/stringHelper.ts#L48*
+*Defined in [helpers/stringHelper.ts:58](https://github.com/tangle-frost/iota-core/tree/master/src/helpers/stringHelper.ts#L58*
 
 Decode control characters to ASCII.
 
@@ -48,7 +49,7 @@ ___
 
 ▸ **encodeNonASCII**(value: *`string`*): `string`
 
-*Defined in [helpers/stringHelper.ts:39](https://github.com/tangle-frost/iota-core/tree/master/src/helpers/stringHelper.ts#L39*
+*Defined in [helpers/stringHelper.ts:49](https://github.com/tangle-frost/iota-core/tree/master/src/helpers/stringHelper.ts#L49*
 
 Encode non ASCII characters with control characters.
 
@@ -76,7 +77,7 @@ Is the string all ASCII characters.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| value | `string` |  string to test if is is ASCII. |
+| value | `string` |  string to test if it is ASCII. |
 
 **Returns:** `boolean`
 True if the object is all ASCII.
@@ -100,6 +101,26 @@ Is the value a string that is empty.
 
 **Returns:** `boolean`
 True if the object is an empty string.
+
+___
+<a id="isprintable"></a>
+
+### `<Static>` isPrintable
+
+▸ **isPrintable**(value: *`string`*): `boolean`
+
+*Defined in [helpers/stringHelper.ts:39](https://github.com/tangle-frost/iota-core/tree/master/src/helpers/stringHelper.ts#L39*
+
+Is the string all printable characters, including tab, carriage return and line feed.
+
+**Parameters:**
+
+| Param | Type | Description |
+| ------ | ------ | ------ |
+| value | `string` |  string to test if it is printabl. |
+
+**Returns:** `boolean`
+True if the object is all printable
 
 ___
 <a id="isstring"></a>

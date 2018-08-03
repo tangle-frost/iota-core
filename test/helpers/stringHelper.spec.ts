@@ -79,6 +79,36 @@ describe("StringHelper", () => {
         });
     });
 
+    describe("isPrintable", () => {
+        it("can return false if passed undefined", () => {
+            chai.expect(StringHelper.isPrintable(undefined)).to.equal(false);
+        });
+
+        it("can return false if passed null", () => {
+            chai.expect(StringHelper.isPrintable(null)).to.equal(false);
+        });
+
+        it("can return false if non ascii", () => {
+            chai.expect(StringHelper.isPrintable(String.fromCharCode(0))).to.equal(false);
+        });
+
+        it("can return true if tab", () => {
+            chai.expect(StringHelper.isPrintable(String.fromCharCode(0x09))).to.equal(true);
+        });
+
+        it("can return true if carriage return", () => {
+            chai.expect(StringHelper.isPrintable(String.fromCharCode(0x0D))).to.equal(true);
+        });
+
+        it("can return true if line feed", () => {
+            chai.expect(StringHelper.isPrintable(String.fromCharCode(0x0A))).to.equal(true);
+        });
+
+        it("can return true if printable", () => {
+            chai.expect(StringHelper.isPrintable("hello")).to.equal(true);
+        });
+    });
+
     describe("encodeNonASCII", () => {
         it("can return undefined if passed undefined", () => {
             chai.expect(StringHelper.encodeNonASCII(undefined)).to.equal(undefined);
