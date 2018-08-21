@@ -66,7 +66,7 @@ ___
 
 *Defined in [helpers/trytesHelper.ts:73](https://github.com/tangle-frost/iota-core/tree/master/src/helpers/trytesHelper.ts#L73*
 
-Check to make sure all the characters in the strin are tryte characters.
+Check to make sure all the characters in the string are tryte characters.
 
 **Parameters:**
 

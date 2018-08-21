@@ -19,7 +19,7 @@ export declare class TrytesHelper {
      */
     static from(trytes: string): string;
     /**
-     * Check to make sure all the characters in the strin are tryte characters.
+     * Check to make sure all the characters in the string are tryte characters.
      * @param trytes To check for validity.
      * @returns true if the trytes are valid.
      */

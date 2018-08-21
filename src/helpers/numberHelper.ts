@@ -8,7 +8,7 @@ export class NumberHelper {
      * @returns True if the object is a integer.
      */
     public static isInteger(value: any): value is Number {
-        return Number.isInteger(value) && !Number.isNaN(value) && Number.isFinite(value);
+        return typeof value === "number" && !Number.isNaN(value) && Number.isFinite(value) && Math.floor(value) === value;
     }
 
     /**

@@ -27,7 +27,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>8/8</span>
+        <span class='fraction'>9/9</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -100,7 +100,7 @@ export class NumberHelper {
      * @returns True if the object is a integer.
      */
     public static isInteger(value: any): value is Number {
-        return Number.isInteger(value) &amp;&amp; !Number.isNaN(value) &amp;&amp; Number.isFinite(value);
+        return typeof value === "number" &amp;&amp; !Number.isNaN(value) &amp;&amp; Number.isFinite(value) &amp;&amp; Math.floor(value) === value;
     }
 &nbsp;
     /**
