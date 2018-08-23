@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.7
+
+* Updated readme
+
 ## v0.0.6
 
 * TrytesHelper from and to now throws on empty content
