@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.0.8
+
+* Added linearGradient type
+* Added radialGradient type
+
 ## v0.0.7
 
 * Updated readme
