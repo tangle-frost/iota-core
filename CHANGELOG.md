@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.9
+
+* Version Bump
+
 ## v0.0.8
 
 * Added linearGradient type

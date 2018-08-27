@@ -31,7 +31,7 @@ Class to represent a radial gradient.
 
 ⊕ **new RadialGradient**(stops: *`object`[]*, offsetXPercent?: *`number`*, offsetYPercent?: *`number`*, radiusPercent?: *`number`*): [RadialGradient](radialgradient.md)
 
-*Defined in data/radialGradient.ts:17*
+*Defined in [data/radialGradient.ts:17](https://github.com/tangle-frost/iota-core/tree/master/src/data/radialGradient.ts#L17*
 
 Create a new instance of radial gradient.
 
@@ -56,7 +56,7 @@ ___
 
 ▸ **offsetXPercent**(): `number`
 
-*Defined in data/radialGradient.ts:58*
+*Defined in [data/radialGradient.ts:58](https://github.com/tangle-frost/iota-core/tree/master/src/data/radialGradient.ts#L58*
 
 Get the offsetXPercent.
 
@@ -70,7 +70,7 @@ ___
 
 ▸ **offsetYPercent**(): `number`
 
-*Defined in data/radialGradient.ts:66*
+*Defined in [data/radialGradient.ts:66](https://github.com/tangle-frost/iota-core/tree/master/src/data/radialGradient.ts#L66*
 
 Get the offsetYPercent.
 
@@ -84,7 +84,7 @@ ___
 
 ▸ **radiusPercent**(): `number`
 
-*Defined in data/radialGradient.ts:74*
+*Defined in [data/radialGradient.ts:74](https://github.com/tangle-frost/iota-core/tree/master/src/data/radialGradient.ts#L74*
 
 Get the radiusPercent.
 
@@ -98,7 +98,7 @@ ___
 
 ▸ **stops**(): `object`[]
 
-*Defined in data/radialGradient.ts:50*
+*Defined in [data/radialGradient.ts:50](https://github.com/tangle-frost/iota-core/tree/master/src/data/radialGradient.ts#L50*
 
 Get the stops.
 

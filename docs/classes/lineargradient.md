@@ -29,7 +29,7 @@ Class to represent a linear gradient.
 
 ⊕ **new LinearGradient**(stops: *`object`[]*, angle?: *`number`*): [LinearGradient](lineargradient.md)
 
-*Defined in data/linearGradient.ts:13*
+*Defined in [data/linearGradient.ts:13](https://github.com/tangle-frost/iota-core/tree/master/src/data/linearGradient.ts#L13*
 
 Create a new instance of linear gradient.
 
@@ -52,7 +52,7 @@ ___
 
 ▸ **angle**(): `number`
 
-*Defined in data/linearGradient.ts:44*
+*Defined in [data/linearGradient.ts:44](https://github.com/tangle-frost/iota-core/tree/master/src/data/linearGradient.ts#L44*
 
 Get the angle.
 
@@ -66,7 +66,7 @@ ___
 
 ▸ **stops**(): `object`[]
 
-*Defined in data/linearGradient.ts:36*
+*Defined in [data/linearGradient.ts:36](https://github.com/tangle-frost/iota-core/tree/master/src/data/linearGradient.ts#L36*
 
 Get the stops.
 
