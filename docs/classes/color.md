@@ -44,7 +44,7 @@ Create a new instance of color.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | alpha | `number` |  The alpha element of the color. |
 | red | `number` |  The red element of the color. |
@@ -209,7 +209,7 @@ Construct a color from a hex string.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | hex | `string` |  The hex string to parse. |
 

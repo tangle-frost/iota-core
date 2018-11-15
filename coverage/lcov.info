@@ -1,5 +1,5 @@
 TN:
-SF:D:\Workarea\tangle-frost\iota-core\src\index.ts
+SF:D:\Workarea\iota.eco\tangle-frost\iota-core\src\index.ts
 FNF:0
 FNH:0
 LF:0
@@ -8,7 +8,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\tangle-frost\iota-core\src\data\color.ts
+SF:D:\Workarea\iota.eco\tangle-frost\iota-core\src\data\color.ts
 FN:24,(anonymous_0)
 FN:49,(anonymous_1)
 FN:88,(anonymous_2)
@@ -127,7 +127,7 @@ BRF:30
 BRH:30
 end_of_record
 TN:
-SF:D:\Workarea\tangle-frost\iota-core\src\factories\factoryBase.ts
+SF:D:\Workarea\iota.eco\tangle-frost\iota-core\src\factories\factoryBase.ts
 FN:5,(anonymous_0)
 FN:14,(anonymous_1)
 FN:22,(anonymous_2)
@@ -160,7 +160,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:D:\Workarea\tangle-frost\iota-core\src\helpers\arrayHelper.ts
+SF:D:\Workarea\iota.eco\tangle-frost\iota-core\src\helpers\arrayHelper.ts
 FN:12,(anonymous_0)
 FN:22,(anonymous_1)
 FN:32,(anonymous_2)
@@ -193,7 +193,7 @@ BRF:10
 BRH:10
 end_of_record
 TN:
-SF:D:\Workarea\tangle-frost\iota-core\src\helpers\numberHelper.ts
+SF:D:\Workarea\iota.eco\tangle-frost\iota-core\src\helpers\numberHelper.ts
 FN:10,(anonymous_0)
 FN:19,(anonymous_1)
 FNF:2
@@ -218,7 +218,7 @@ BRF:9
 BRH:9
 end_of_record
 TN:
-SF:D:\Workarea\tangle-frost\iota-core\src\helpers\objectHelper.ts
+SF:D:\Workarea\iota.eco\tangle-frost\iota-core\src\helpers\objectHelper.ts
 FN:10,(anonymous_0)
 FN:19,(anonymous_1)
 FN:30,(anonymous_2)
@@ -265,7 +265,7 @@ BRF:20
 BRH:20
 end_of_record
 TN:
-SF:D:\Workarea\tangle-frost\iota-core\src\helpers\stringHelper.ts
+SF:D:\Workarea\iota.eco\tangle-frost\iota-core\src\helpers\stringHelper.ts
 FN:10,(anonymous_0)
 FN:20,(anonymous_1)
 FN:29,(anonymous_2)
@@ -315,7 +315,7 @@ BRF:18
 BRH:18
 end_of_record
 TN:
-SF:D:\Workarea\tangle-frost\iota-core\src\helpers\trytesHelper.ts
+SF:D:\Workarea\iota.eco\tangle-frost\iota-core\src\helpers\trytesHelper.ts
 FN:17,(anonymous_0)
 FN:41,(anonymous_1)
 FN:73,(anonymous_2)

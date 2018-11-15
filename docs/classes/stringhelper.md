@@ -35,7 +35,7 @@ Decode control characters to ASCII.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | value | `string` |  The encoded string to convert back to ASCII. |
 
@@ -55,7 +55,7 @@ Encode non ASCII characters with control characters.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | value | `string` |  The string value to escape. |
 
@@ -75,7 +75,7 @@ Is the string all ASCII characters.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | value | `string` |  string to test if it is ASCII. |
 
@@ -95,7 +95,7 @@ Is the value a string that is empty.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | value | `any` |  Object to test for its no emptyness. |
 
@@ -115,7 +115,7 @@ Is the string all printable characters, including tab, carriage return and line 
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | value | `string` |  string to test if it is printabl. |
 
@@ -135,7 +135,7 @@ Is the value a string.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | value | `any` |  Object to test for its stringyness. |
 

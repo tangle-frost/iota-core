@@ -37,7 +37,7 @@ Create a new instance of radial gradient.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | stops | `object`[] |  The stop for the gradient. |
 | `Optional` offsetXPercent | `number` |  The offsetXPercent for the gradient. |

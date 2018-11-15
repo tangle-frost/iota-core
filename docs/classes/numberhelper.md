@@ -31,7 +31,7 @@ Is the value an integer.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | value | `any` |  Object to test for its integerness. |
 
@@ -51,7 +51,7 @@ Is the value a number.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | value | `any` |  Object to test for its numberyness. |
 

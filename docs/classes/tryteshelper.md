@@ -50,7 +50,7 @@ Convert trytes into a string value.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | trytes | `string` |  The trytes to convert into a string value. |
 
@@ -70,7 +70,7 @@ Check to make sure all the characters in the string are tryte characters.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | trytes | `string` |  To check for validity. |
 
@@ -90,7 +90,7 @@ Convert a string value into trytes.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | value | `string` |  The value to convert into trytes. |
 

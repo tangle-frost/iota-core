@@ -35,7 +35,7 @@ Create a new instance of linear gradient.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | stops | `object`[] |  The stop for the gradient. |
 | `Optional` angle | `number` |  The angle for the gradient. |
