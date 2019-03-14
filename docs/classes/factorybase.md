@@ -75,7 +75,7 @@ ___
 
 ▸ **getInstance**(): [FactoryBase](factorybase.md)<`T`>
 
-*Defined in [factories/factoryBase.ts:60](https://github.com/tangle-frost/iota-core/tree/master/src/factories/factoryBase.ts#L60*
+*Defined in [factories/factoryBase.ts:59](https://github.com/tangle-frost/iota-core/tree/master/src/factories/factoryBase.ts#L59*
 
 **Returns:** [FactoryBase](factorybase.md)<`T`>
 
